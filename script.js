@@ -1,14 +1,29 @@
 console.log("hola")
 
+// -------------------------------------Tipos de Datos-----------------------------------------
+
+/* Con let declaramos una variable */
+
 let nombre = "Nely"
 console.log(nombre)
 nombre = "Johanna"
 console.log(nombre)
 
+let numero1 = 7
+let numero2 = 9
+let resultado = numero1 + numero2
+console.log("resultado" , resultado , "algo")
+
 const pi = 3.1416
 
 var Apellido = "Dias"
 console.log(Apellido)
+
+/* Comentario de bloque */
+// comentario de línea
+
+
+
 
 // ----------------------------------Tipos de datos Primitivos--------------------------------
 
@@ -69,7 +84,7 @@ let usuario = {
 }
 console.log(usuario)
 console.log(usuario.ciudad)
-console.log(usuario.nombre.edad)
+console.log(usuario.nombre)
 
 
 
