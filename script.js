@@ -7,7 +7,7 @@ console.log(nombre)
 
 const pi = 3.1416
 
-var Apellido = "Montes"
+var Apellido = "Dias"
 console.log(Apellido)
 
 // ----------------------------------Tipos de datos Primitivos--------------------------------
