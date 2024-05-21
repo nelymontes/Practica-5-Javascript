@@ -86,5 +86,56 @@ console.log(usuario)
 console.log(usuario.ciudad)
 console.log(usuario.nombre)
 
+//Tipos de Datos Vacios
+
+
+//null - nulo
+//Este tipo de variables se da por algún resultado
+let espacioVacio = null
+
+//undefined - indefinido
+let noDefinido = undefined
+console.log(usuario.apellido)
+
+//Not a Number (NaN) - No es un numero
+const multiplicaion = 10 * "hola"
+console.log(multiplicaion)
+
+//---------------------Estructuras de Control--------------------------
+//Bucles - Un proceso que se repite
+//Loop - bucle infinito
+
+const listaAnimales = [
+"perro",
+"gato",
+"gallina",
+"oso"
+]
+
+// Propiedad length
+console.log('tamaño del array:',listaAnimales.length)
+
+//For es una palabra reservada
+//Parametro 1: Contador 
+//Parametro 2: Condición para que el bucle se detenga
+//Parametro 3: Comportamiento del contador
+
+// for(let contador = 0; contador < listaAnimales.length; contador + 1){console.log(contador)console.log(listaAnimales[contador])
+
+for(let i = 0; i < listaAnimales.length; i++){
+    console.log(i)
+    console.log(listaAnimales[i])
+}
+
+//Condiciones
+// - Igualdad: ===
+// - Comparación menor que: <
+// - Comparación mayor que >
+// - Comparación menor o igual que: <=
+// - Comparación mayor o igual que >=
+
+
+
+
 
 
