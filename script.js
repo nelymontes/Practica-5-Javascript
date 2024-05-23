@@ -129,10 +129,100 @@ for(let i = 0; i < listaAnimales.length; i++){
 
 //Condiciones
 // - Igualdad: ===
+// - diferente de:!==
 // - Comparación menor que: <
 // - Comparación mayor que >
 // - Comparación menor o igual que: <=
 // - Comparación mayor o igual que >=
+
+const saludo= "hola"
+let número = 10
+
+//condicional if, entre parentesis la condición y entre llaves la acción
+if (10 === número) {
+    console.log('número es 10')
+} else if (número ===11){
+    console.log("número es 11")
+} else if (número ===12){
+    console.log("número es 12")
+} else {
+    console.log("no es ni 10, ni 11, ni 12")
+}
+
+// -----------------------------Operadores Logicos-----------------------------------
+
+
+// or (se escribe con las barras ||)
+
+let texto = "c"
+
+if(texto === "a" || texto === "b" || texto === "c"){
+    console.log("la condición es verdadera")
+}else{
+    console.log("el texto no es ni 'a' ni 'b'")
+}
+
+// and (se escribe con el operador amperson, se registra dos veces &&)
+
+let números = 20
+
+if (números > 0 && números < 10){
+    console.log("verdadero")
+} else{
+    console.log("nuestro número no esta entre el 1 y el 10")
+}
+
+// ------------------------bucles - while - mientras --------------------
+
+let contador = 0
+//while   (contador < 5){
+    //console.log("ciclo:", contador)
+    //console.log(listaAnimales[contador])
+    
+
+    // contador = contador +1 (++)
+
+// -----------------------Funciones ----------------------------------------
+
+// Estructuras reciben parámetros, procesarlos
+// y devuelven parámetros, además de encapsular código
+
+//Características
+
+//1. Agrupar código relaciona a un cierto fin
+// 2. La función es reutilizable
+
+// Declaración de la función JavaScript antigua
+// esta función se guarda automaticamente
+//function sumar(valor1, valor2){
+    //console.log("parámetros:", valor1, valor2)
+    
+    //let resultado = valor1 + valor2
+    
+    //return guarda el resultado
+    //return resultado
+//}
+
+// Declaración de la función con ECMAScript
+// Función Flecha
+// las funciones flechas debemos guardarlas y la estructura es
+// () => {}
+
+const sumar = (valor1, valor2) => {
+    let resultado = valor1 + valor2
+    return resultado
+}
+
+
+
+// ejecución de la función // Llamado de la función 
+let resultadoSuma = sumar(5, 10)
+console.log("resultado de la suma", resultadoSuma)
+console.log("resultado de la suma2", sumar(50, 15))
+console.log("resultado de la suma3", sumar(10, 110))
+console.log("resultado de la suma4", sumar(2, 5))
+
+
 
 
 
