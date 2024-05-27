@@ -3,15 +3,15 @@
 console.log("hola")
 const mostrarValor = () => {
     // getElementById= obtener Elemento por el ID
-   const input1 = document.getElementById("valor1")
+    const input1 = document.getElementById("valor1")
 
-   let valor1 = input1.value
-   console.log(valor1)
+    let valor1 = input1.value
+    console.log(valor1)
     console.log("mostrando valor")
     const span = document.getElementById("input-valor")
-console.log(span)
-console.log(span.innerHTML) 
-span.innerHTML = valor1
+    console.log(span)
+    console.log(span.innerHTML)
+    span.innerHTML = valor1
 }
 // ------------ Calculadora -----------------
 //LeerInputs debe leer los inputs, validarlos
@@ -29,14 +29,14 @@ const leerInputs = () => {
     console.log(numero1, numero2)
     //validar que no esten vacíos
 
-    if(numero1 === ''){
+    if (numero1 === '') {
         //anunciar un error
         alert("El valor 1 no existe o contiene caracteres no númericos")
         //Interrumpir la ejecución
         return null
     }
 
-    if(numero2 === ''){
+    if (numero2 === '') {
         //anunciar un error
         alert("El valor 2 no existe o contiene caracteres no númericos")
         //Interrumpir la ejecución
@@ -55,8 +55,8 @@ const leerInputs = () => {
 
     //esta es otra forma de declarar un JSON
     // return {
-        //numero1: numero1,
-        //numero2: numero2
+    //numero1: numero1,
+    //numero2: numero2
     //}
 }
 
@@ -66,11 +66,38 @@ const leerInputs = () => {
 
 const realizarOperación = (operación) => {
     const numeros = leerInputs()
+    if(numeros === null){
+        return
+    }
     console.log(operación, "con los numeros:", numeros.numero1, 'y', numeros.numero2)
+
+
+    let resultado = 0
+
+//Validar la operación
+    if (operación === 'suma') {
+
+//return nuemeros.numero1 + numeros.numero 2
+
+        resultado = numeros.numero1 + numeros.numero2
+    }
+    if (operación === 'resta') {
+        resultado = numeros.numero1 - numeros.numero2
+    }
+
+    if (operación === 'multiplicar'){
+        resultado = numeros.numero1 * numeros.numero2
+    }
+
+    if (operación === 'división'){
+        resultado = numeros.numero1 / numeros.numero2
+    }
+    console.log("resultado;", resultado)
 }
 
 //mostrarResultado debe recibir el resultado de la operación y mostrarlo al usuario
 //Además debe modificar el simbolo de operación que se realizó
-const mostrarResultado = ()=> {
+const mostrarResultado = (resultado) => {
+console.log(resultado)
 
 }
